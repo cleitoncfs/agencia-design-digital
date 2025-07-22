@@ -29,10 +29,6 @@ O projeto foi cuidadosamente adaptado para funcionar bem em celulares, inclusive
 -   🌙 Modo escuro com variações visuais
 -   🧪 Totalmente responsivo
 
-## 📸 Preview
-
-![Preview](https://your-screenshot-link.png) <!-- substitua por uma imagem do projeto se desejar -->
-
 ## 🧑‍💻 Desenvolvedor
 
 Desenvolvido com carinho por [Cleiton Santos](https://portfolio-cleiton.netlify.app/).
