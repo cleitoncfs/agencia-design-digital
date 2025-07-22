@@ -1,0 +1,128 @@
+/* Estilos base */
+.card_claro,
+.card_escuro {
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Cores claras */
+.card_claro {
+    background-color: #fff;
+    border: 1px solid #ececec;
+}
+
+/* Cores escuras */
+.card_escuro {
+    background-color: #2a2a2a;
+    border: 1px solid #ffffff0d;
+}
+
+/* Cores por tipo de cargo */
+.web_designer {
+    border-left: 8px solid #2a9d8f;
+}
+
+.product_designer {
+    border-left: 8px solid #e76f51;
+}
+
+.digital_consulting {
+    border-left: 8px solid #264653;
+}
+
+/* Hover para todos */
+.card_claro:hover,
+.card_escuro:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #ffe18d, #feb633);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.card_claro:hover .data,
+.card_claro:hover .titulo,
+.card_claro:hover .empresa,
+.card_claro:hover .descricao,
+.card_escuro:hover .data,
+.card_escuro:hover .titulo,
+.card_escuro:hover .empresa,
+.card_escuro:hover .descricao {
+    color: #000;
+}
+
+/* Data */
+.data {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #777;
+    margin-bottom: 0.5rem;
+}
+
+.card_escuro .data {
+    color: #ccc;
+}
+
+/* Título */
+.titulo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 0.3rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.card_escuro .titulo {
+    color: #f0f0f0;
+}
+
+/* Empresa */
+.empresa {
+    font-size: 1rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.card_escuro .empresa {
+    color: #ccc;
+}
+
+/* Descrição */
+.descricao {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.card_escuro .descricao {
+    color: #ddd;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 1.3rem;
+    }
+
+    .descricao {
+        font-size: 0.95rem;
+    }
+
+    .card_claro,
+    .card_escuro {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 5vw;
+    }
+
+    .descricao {
+        font-size: 4vw;
+    }
+}

@@ -1,0 +1,72 @@
+/* 🧱 Container do topo */
+.topo {
+    padding: 0.8rem 1.5rem;
+    background-color: #f4f4f4;
+    transition: background-color 0.4s ease;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* 🌙 Modo escuro do topo */
+.escuro {
+    background-color: #121212;
+}
+
+/* 📦 Container interno alinhado */
+.conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* 🖼️ Logo da agência */
+.logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* 🌗 Botão do modo de tema */
+.botao {
+    background-color: transparent;
+    border: none;
+    padding: 0.3rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* 🚀 Efeito de hover no ícone */
+.botao:hover .icone {
+    transform: scale(1.15);
+}
+
+/* ☀️🌙 Ícone do tema */
+.icone {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.2));
+}
+
+/* 📱 Responsividade para telas menores */
+@media (max-width: 768px) {
+    .conteiner {
+        padding: 0 1rem;
+    }
+
+    .logo {
+        width: 28px;
+        height: 28px;
+    }
+
+    .icone {
+        width: 22px;
+        height: 22px;
+    }
+}

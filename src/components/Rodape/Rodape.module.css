@@ -1,0 +1,106 @@
+.rodape {
+    padding: 2rem;
+    background-color: #eaeaea;
+    color: #333;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.escuro {
+    background-color: #141414;
+    color: #f0f0f0;
+    border-top: 1px solid #444;
+}
+
+.logo {
+    width: 52px;
+    height: auto;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+    animation: pulse 2s infinite;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1) rotate(-2deg);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+}
+
+.textoPrincipal {
+    font-size: 0.95rem;
+    max-width: 600px;
+    margin: 0 auto 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.links {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+    filter: grayscale(100%) brightness(0.8);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    filter: none;
+}
+
+.copyright {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: #777;
+    font-weight: 500;
+    opacity: 0.9;
+    letter-spacing: 0.3px;
+}
+
+.escuro .copyright {
+    color: #ccc;
+}
+
+.credits {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.footerLink {
+    color: #feb633;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: color 0.3s ease;
+}
+
+.footerLink:hover {
+    color: #ff9100;
+}
+
+.linkIcon {
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
