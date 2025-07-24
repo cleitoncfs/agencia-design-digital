@@ -7,7 +7,6 @@ import behanceIcon from "../../assets/img/behance.png";
 import dribbbleIcon from "../../assets/img/dribbble.png";
 import facebookIcon from "../../assets/img/facebook.png";
 import googleIcon from "../../assets/img/google.png";
-import twitterIcon from "../../assets/img/twitter.png";
 import logoIcon from "../../assets/img/logo.png";
 
 function Rodape({ ehTemaEscuro }) {
@@ -34,17 +33,6 @@ function Rodape({ ehTemaEscuro }) {
                     <img
                         src={facebookIcon}
                         alt="Facebook"
-                        className={estilos.icon}
-                    />
-                </a>
-                <a
-                    href="https://twitter.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <img
-                        src={twitterIcon}
-                        alt="Twitter"
                         className={estilos.icon}
                     />
                 </a>
