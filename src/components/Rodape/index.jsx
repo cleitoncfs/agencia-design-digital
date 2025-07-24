@@ -26,6 +26,17 @@ function Rodape({ ehTemaEscuro }) {
 
             <div className={estilos.links}>
                 <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img
+                        src={instagramIcon}
+                        alt="Instagram"
+                        className={estilos.icon}
+                    />
+                </a>
+                <a
                     href="https://facebook.com"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -77,17 +88,6 @@ function Rodape({ ehTemaEscuro }) {
                     <img
                         src={googleIcon}
                         alt="Google"
-                        className={estilos.icon}
-                    />
-                </a>
-                <a
-                    href="https://instagram.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <img
-                        src={instagramIcon}
-                        alt="Instagram"
                         className={estilos.icon}
                     />
                 </a>
