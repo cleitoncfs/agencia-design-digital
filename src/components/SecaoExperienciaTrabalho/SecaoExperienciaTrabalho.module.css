@@ -57,3 +57,23 @@
         gap: 1.5rem;
     }
 }
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.6rem; /* igual ao SecaoBanner */
+        line-height: 1.3;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .texto {
+        font-size: 0.9rem; /* igual ao SecaoBanner */
+        line-height: 1.5;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .conteiner_cards {
+        gap: 1.5rem;
+    }
+}

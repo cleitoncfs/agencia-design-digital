@@ -62,3 +62,23 @@ h5 {
         font-size: 0.9rem;
     }
 }
+
+@media (max-width: 400px) {
+    html {
+        font-size: 85%; /* Reduz ligeiramente o tamanho da fonte base */
+    }
+
+    /* Garante que elementos não ultrapassem a largura da tela */
+    img,
+    video,
+    iframe {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Previne overflow horizontal */
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+}

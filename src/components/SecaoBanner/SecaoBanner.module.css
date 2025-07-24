@@ -149,3 +149,68 @@
         font-size: 0.9rem;
     }
 }
+
+@media screen and (device-width: 390px) {
+    .texto {
+        font-size: 0.92rem; /* leve ajuste */
+        padding: 0 1rem;
+        line-height: 1.5;
+        overflow-wrap: break-word;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 100%; /* garante que não ultrapasse */
+    }
+
+    .container {
+        gap: 1.5rem; /* suaviza espaçamento no iPhone 12 */
+    }
+}
+
+/* Adicione estas regras no final do arquivo */
+
+/* Ajustes específicos para telas muito estreitas (Galaxy A12, etc) */
+@media (max-width: 400px) {
+    .banner {
+        padding: 2.5rem 1rem; /* Reduz o padding vertical e mantém 1rem horizontal */
+    }
+
+    .container {
+        gap: 1.5rem;
+        padding: 0 0.5rem; /* Adiciona um pequeno padding interno */
+    }
+
+    .textoArea {
+        min-width: unset; /* Remove a largura mínima fixa */
+        width: 100%;
+        padding: 0 0.5rem; /* Protege o texto das bordas */
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+        padding: 0 0.5rem; /* Garante espaço nas laterais */
+    }
+
+    .texto {
+        padding: 0 0.5rem; /* Garante espaço nas laterais */
+    }
+}
+
+/* Ajustes extras para telas extremamente estreitas (< 360px) */
+@media (max-width: 360px) {
+    .banner {
+        padding: 2rem 0.75rem; /* Padding um pouco menor */
+    }
+
+    .titulo {
+        font-size: 1.4rem;
+    }
+
+    .texto {
+        font-size: 0.85rem;
+    }
+
+    .botao {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+}
